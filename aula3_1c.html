@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style3c.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <script src="script.js"></script>
+
+
+  <div id="quad1">oi </div>
+  <!--<div id="quad2"> oi</div>
+//  <div id="quad3"> oi</div>
+  <br>
+<button id="bt1"> passa aqui </button>  -->
+  
+  <script>
+    var a = document.getElementById("quad1");
+   // var b = document.getElementById("quad2")
+   // var c = document.getElementById("quad3");
+   // bt1.addEventListener("click", mudaTodos);
+    
+   
+    
+   a.addEventListener("click", mudaCor)
+    //b.addEventListener("mouseover", mudaCor)
+    //c.addEventListener("mouseout", mudaCor)
+
+   // quads.addEventListener("mouseover", mudaTodos)
+    
+    function mudaCor(){
+      a.style.background="pink"
+      a.innerText="passei"
+     // b.innerText="aqui"  
+   //   b.style.border='solid 2px red'
+     // c.style.border='dotted 2px blue'
+     // c.innerText ="agora"
+    }

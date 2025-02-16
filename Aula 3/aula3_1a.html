@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--<script src="script.js" async></script> -->
+
+   <div id="cubo1"> </div>
+   <div id="cubo2"> </div>
+  
+  <button id="btn1" onclick="mudaCor()" > Mudar cor do cubo azul</button><br />
+  <button id="btn2" onmouseover="mudaAparTodos()"> Mudar todos</button><br />
+  
+  <script>
+    function mudaCor() {
+        document.getElementById("cubo1").style.background = "yellow";
+    }
+    
+    function mudaAparTodos() {
+    var elementos = document.getElementsByTagName("div");
+      for (i = 0; i < elementos.length; i++) {
+         elementos[i].style.borderWidth = "2px";
+         elementos[i].style.borderColor = "black";
+         elementos[i].style.borderStyle = "solid";
+        }
+    }
+  </script>
+</body>
+
+</html>
